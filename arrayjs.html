@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrayjs</title>
+</head>
+<body>
+    <script>
+        var Data=["tamil" ,"jhonn" ,25,false]
+         document.writeln(Data)
+
+         let data=new Array()
+         data.push("sudherdson")
+         data.push("mothilal")
+         data.push(false)
+         data.push('x')
+         data.push(1.87)
+         document.writeln(data)
+         
+        //  let print=(data)=>
+        //  {
+        //     alert(data)
+        //  }
+        //  data.map(print)
+
+        //  data.pop()
+        //  data.pop()
+        //  document.writeln(data)
+
+        //  for(i=0;i<data;i++)
+        //  {
+        //     console.log(data)
+
+        //  }
+
+         let newone=prompt("tell us your positionb to delete")
+
+         data=data.filter((data1,pos)=>
+         {
+           return data1!==data[newone];
+         })
+
+         data.map((data1)=>
+         { 
+            document.writeln("<b>"+data1+"</b>")
+
+         })
+         
+
+    </script>
+    
+</body>
+</html>/
